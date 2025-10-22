@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Adicionando Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  -->
+    <link rel="stylesheet" href="style.css" />
     <title>Extensão TT</title>
   </head>
   <body>
-    <h1>Transformar Textos</h1>
+    <main>
+      <h1>Transformar Textos</h1>
 
+      <input
+        type="text"
+        placeholder="Digite o texto aqui"
+        name="text"
+        id="input-text"
+        class="input-text"
+      />
 
+      <div class="container-button">
+        <button type="button" class="btn" id="btnMaiuscula">MAIÚSCULA</button>
+        <button type="button" class="btn" id="btnMinuscula">minúscula</button>
+      </div>
+
+      <div name="resultado" class="resultado" id="resultado">Resultado:</div>
+    </main>
   </body>
 </html>
