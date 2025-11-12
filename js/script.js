@@ -22,4 +22,11 @@ window.document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("input-text").value = "";
     document.getElementById("resultado").innerHTML = "";
   });
+  document.getElementById("btnFonte").addEventListener("click", () => {
+    let inputText = document.getElementById("input-text").value;
+    let textarea = document.getElementById("resultado").classList;
+    // let textarea = document.getElementById("resultado").style.fontFamily = "Agu Display";
+    textarea.toggle("font");
+    document.getElementById("resultado").innerHTML = inputText;
+  });
 });
